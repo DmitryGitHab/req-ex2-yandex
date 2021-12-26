@@ -13,7 +13,6 @@ class YaUploader:
             'Authorization': 'OAuth {}'.format(self.token)
         }
 
-
     def _get_upload_link(self, file):
         upload_url = "https://cloud-api.yandex.net/v1/disk/resources/upload"
         headers = self.get_headers()
